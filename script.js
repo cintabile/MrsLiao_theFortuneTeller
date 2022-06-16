@@ -7,12 +7,19 @@ if(nail_service){
 } else{
     alert("什麼你沒有要指甲彩繪唷？") 
 }
+function ask_your_age(){
 var user_age = prompt("好啦，西元幾年出生:");
-if(Number(user_age) <= 1993){
+if(Number(user_age) <= 1993 && Number(user_age) > 1922){
     alert(`西元${user_age}年, 民國${user_age - 1911}年....`)
     alert("你老妹捏，hen老很老捏")
 } else if(Number(user_age) > 1993){
     alert("你粉年輕捏...")
-} 
+} else if(Number(user_age) <= 1922 && Number(user_age) > 0){
+    alert("你這麼老，清朝人喔?")
+} else{
+    ask_your_age();
+}
+}
+ask_your_age();
 alert(".........");
 alert("你帶著廖麗芳老師的占卜結果和人生智慧離開了店鋪...");
