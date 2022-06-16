@@ -16,16 +16,3 @@ if(Number(user_age) <= 1993){
 } 
 alert(".........");
 alert("你帶著廖麗芳老師的占卜結果和人生智慧離開了店鋪...");
-
-
-
-
-// while(user_age == false || typeof(user_age) != "number"){
-//     break;
-//     } 
-
-
-// var sit_down = document.createElement("button");
-// sit_down.innerHTML = "坐下";
-// document.body.appendChild(sit_down);
-// sit_down.onclick = function(){document.write("ffff")}
